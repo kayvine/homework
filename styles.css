@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  color: #222;
+  font-family: "Vollkorn", Times, serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+/* header */
+.site-header {
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  z-index: 10;
+}
+
+.site-header>nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-brand>a {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .9);
+}
+
+.site-brand>a:hover {
+  color: rgba(0, 0, 0, .5);
+}
+
+.site-header ul {
+  margin-left: auto;
+}
+
+.site-header ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+/* Hero */
+.hero {
+  background-color: rgb(226, 226, 226);
+  color: #222;
+  height: 100vh;
+  position: relative;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  text-align: center;
+  font-size: 1.25rem;
+  display: flex;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.bg-layers,
+.bg-layer {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.bg-layer>img {
+  height: 100%;
+}
+
+.red {
+  background: url(images/red.png) center no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+/* Content */
+.site-content {
+  padding: 100px 0;
+  text-align: center;
+}
