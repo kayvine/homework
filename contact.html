@@ -26,14 +26,26 @@
   <main id="content" class="site-content" role="main">
     <section id="contact" class="page contact-page">
       <div class="text-center pt-5 mb-md-3">
-        <h2 class="block-title">Leave a message</h2>
-        <form action="" method="get">
-          <div>
-            <input type="email" name="email" id="email">
+
+        <h2 class="mb-3">Leave a message</h2>
+
+        <form action="" method="get" class='my-form'>
+          <div class='form-row'>
             <label for="email">Your email</label>
-            <textarea name="talktome" id="talktome" cols="30" rows="6"></textarea>
+            <input type="email" name="email" id="email" placeholder="your@mail.com">
+          </div>
+
+          <div class='form-row'>
+            <label for='talktome'>Your message</label>
+            <textarea id='talktome' name='talktome'></textarea>
+            <div class='instructions'>Leave me a message (this doesn't work btw)</div>
+          </div>
+
+          <div class='form-row'>
+            <button>Go</button>
           </div>
         </form>
+
       </div>
     </section>
   </main>
