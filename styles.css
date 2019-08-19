@@ -104,6 +104,19 @@ hr {
   margin-left: 20px;
 }
 
+nav a,
+nav a:hover,
+nav a:focus, a:active { text-decoration: none; }
+
+nav a { color: rgba(0, 0, 0, 1); }
+nav a:hover { color: rgba(0, 0, 0, .5); }
+nav a:focus, a:active { color: #222; }
+
+nav li.active {
+  color: rgba(0, 0, 0, .8);
+  border-bottom: 1px solid rgba(0, 0, 0, .8);
+}
+
 /* Hero */
 .hero {
   background-color: rgb(226, 226, 226);
