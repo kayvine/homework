@@ -50,6 +50,10 @@ h4 {
   font-weight: 500;
 }
 
+a { color: rgba(0, 0, 0, .9); }
+a:hover { color: rgba(0, 0, 0, .5); }
+a:focus, a:active { color: rgba(0, 0, 0, .8); }
+
 p {
   margin-bottom: 0.5rem;
 }
@@ -108,9 +112,9 @@ nav a,
 nav a:hover,
 nav a:focus, a:active { text-decoration: none; }
 
-nav a { color: rgba(0, 0, 0, 1); }
+nav a { color: rgba(0, 0, 0, .9); }
 nav a:hover { color: rgba(0, 0, 0, .5); }
-nav a:focus, a:active { color: #222; }
+nav a:focus, a:active { color: rgba(0, 0, 0, .9); }
 
 nav li.active {
   color: rgba(0, 0, 0, .8);
